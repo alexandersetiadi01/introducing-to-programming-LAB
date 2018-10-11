@@ -121,7 +121,8 @@ def toll_operator():  # function for toll operator
 
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))   # print the revenue(total fee)
-
+                    r = revenue + revenue1  # total from revenue and revenue1 for the grand total revenue
+                    print("grand total revenue = {}".format(r))
                     print("<exit program>\n have a nice trip")  # print this text
 
                     break  # stop the program
@@ -153,8 +154,10 @@ def toll_operator():  # function for toll operator
 
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))  # print the revenue(total fee)
-
+                    r = revenue + revenue1  # total from revenue and revenue1 for the grand total revenue
+                    print("grand total revenue = {}".format(r))
                     print("<exit program>\n have a nice trip")  # print this text
+                    
                     break  # stop the program
 
             elif choice == "truck":  # if choice is equal to truck, run the code
@@ -184,8 +187,10 @@ def toll_operator():  # function for toll operator
 
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))  # print the revenue(total fee)
-
+                    r = revenue + revenue1  # total from revenue and revenue1 for the grand total revenue
+                    print("grand total revenue = {}".format(r))
                     print("<exit program>\n have a nice trip")  # print this text
+                    
                     break  # stop the program
         elif location == "pondok aren":
             print("category of vehicle: ")  # decoration
@@ -219,7 +224,8 @@ def toll_operator():  # function for toll operator
 
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))  # print the revenue(total fee)
-
+                    r = revenue + revenue1  # total from revenue and revenue1 for the grand total revenue
+                    print("grand total revenue = {}".format(r))
                     print("<exit program>\n have a nice trip")  # print this text
 
                     break  # stop the program
@@ -251,7 +257,10 @@ def toll_operator():  # function for toll operator
 
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))  # print the revenue(total fee)
-
+                    r = revenue + revenue1  # total from revenue and revenue1 for the grand total revenue
+                    print("grand total revenue = {}".format(r))
+                    print("<exit program>\n have a nice trip")  # print this text
+                    
                     break  # stop the program
 
             elif choice == "truck":  # if choice is equal to truck, run the code
@@ -282,6 +291,10 @@ def toll_operator():  # function for toll operator
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))  # print the revenue(total fee)
                     # revenue is the total fee from all vehicle in this toll gate
+                    r = revenue + revenue1  # total from revenue and revenue1 for the grand total revenue
+                    print("grand total revenue = {}".format(r))
+                    print("<exit program>\n have a nice trip")  # print this text
+                    
                     break  # stop the program
 
 toll_operator()  # call the function toll_operator
