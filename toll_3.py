@@ -87,7 +87,7 @@ def toll_operator():  # function for toll operator
 
         location = input("location: ")
 
-
+        print("toll meruya or toll pondok aren ???")
         if location == "meruya":
             print("category of vehicle: ")  # decoration
             print("1. Car (Rp.6.000) \n2. Bus (Rp.8.000) \n3. Truck (Rp.10.000)")  # show the option
@@ -281,7 +281,6 @@ def toll_operator():  # function for toll operator
 
                     # calculate the total fee from all car, truck, bus
                     print("total revenue = Rp.{}".format(revenue1))  # print the revenue(total fee)
-
                     # revenue is the total fee from all vehicle in this toll gate
                     break  # stop the program
 
