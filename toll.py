@@ -50,7 +50,15 @@ restart = "Y"                       # make a variable call restart
 
 def toll_operator():                # function for toll operator
     while restart != ("N"):         # using while loop which has condition restart is not "N"
-        print("|=========<Toll>=========|")     # decoration
+         print(
+            "=========================================================================================================")
+        print(
+            "                                     Toll payment systems                                                ")
+        print(
+            "                                     PT. Jasa Marga, Tbk.                                                ")
+        print(
+            "=========================================================================================================")
+
         print("category of vehicle: ")          # decoration
         print("1. Car (Rp.6.000) \n2. Bus (Rp.8.000) \n3. Truck (Rp.10.000)") # show the option
         choice = input("type of vehicle: ").lower()  # to input the choice that you want
