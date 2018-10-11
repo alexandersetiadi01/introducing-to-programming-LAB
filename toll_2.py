@@ -53,7 +53,15 @@ def toll_operator():  # function for toll operator
     bus = 0        # the number of bus start from 0
     truck = 0      # the number of truck start from 0
     while restart != ("N"):  # using while loop which has condition restart is not "N"
-        print("|=========<Toll>=========|")  # decoration
+         print(
+            "=========================================================================================================")
+        print(
+            "                                     Toll payment systems                                                ")
+        print(
+            "                                     PT. Jasa Marga, Tbk.                                                ")
+        print(
+            "=========================================================================================================")
+
         print("category of vehicle: ")  # decoration
         print("1. Car (Rp.6.000) \n2. Bus (Rp.8.000) \n3. Truck (Rp.10.000)")  # show the option
         choice = input("type of vehicle: ").lower()  # to input the choice that you want
@@ -66,10 +74,12 @@ def toll_operator():  # function for toll operator
 
             if menu == "N":  # if menu is equal to "N"
                 print("car  bus  truck")    # decoration
+                print("---------------")
                 print("{}     {}     {}".format(car, bus, truck))   # print the total number of car,bus,truck
+                print("---------------")
                 revenue = (TG.car_fee() * car + TG.bus_fee() * bus + TG.truck_fee() * truck)
                 # calculate the total fee from all car, truck, bus
-                print("revenue = {}".format(revenue))   # print the revenue(total fee)
+                print("total revenue = Rp.{}".format(revenue))   # print the revenue(total fee)
 
                 print("<exit program>\n have a nice trip")  # print this text
 
@@ -83,10 +93,12 @@ def toll_operator():  # function for toll operator
 
             if menu == "N":  # if menu is equal to N
                 print("car  bus  truck")  # decoration
+                print("---------------")
                 print("{}     {}     {}".format(car, bus, truck))  # print the total number of car,bus,truck
+                print("---------------")
                 revenue = (TG.car_fee() * car + TG.bus_fee() * bus + TG.truck_fee() * truck)
                 # calculate the total fee from all car, truck, bus
-                print("revenue = {}".format(revenue))  # print the revenue(total fee)
+                print("total revenue = Rp.{}".format(revenue))   # print the revenue(total fee)
 
                 print("<exit program> \n have a nice trip")  # show this text
                 break  # stop the program
@@ -99,10 +111,12 @@ def toll_operator():  # function for toll operator
 
             if menu == "N":  # if menu is equal to N
                 print("car  bus  truck")  # decoration
+                print("---------------")
                 print("{}     {}     {}".format(car, bus, truck))  # print the total number of car,bus,truck
+                print("---------------")
                 revenue = (TG.car_fee() * car + TG.bus_fee() * bus + TG.truck_fee() * truck)
                 # calculate the total fee from all car, truck, bus
-                print("revenue = {}".format(revenue))  # print the revenue(total fee)
+                print("total revenue = Rp.{}".format(revenue))   # print the revenue(total fee)
 
                 print("<exit program> \n have a nice trip")  # show this text
                 break  # stop the program
