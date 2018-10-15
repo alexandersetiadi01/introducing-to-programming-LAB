@@ -91,7 +91,7 @@ def receptionist():                 # function for receptionist
                                                                                        len(elite)))
                         break       # stop the program
                 elif len(double) > 13:  # if len double is more than 13, show this text
-                    print("no more room for single")
+                    print("no more room for double")
 
             if category == "3":                 # if category is 3, run the code
                 if len(elite) <= 2:             # if len elite is less or equal to 8, run the code
@@ -109,7 +109,7 @@ def receptionist():                 # function for receptionist
                         break
 
                 else:
-                    print("no more room for single")
+                    print("no more room for elite")
 
         elif choice == "2":   # if choice is equal to 2, run the code
             print("available room: single = {} double = {} elite = {} ".format(available_s, available_d, available_e))
