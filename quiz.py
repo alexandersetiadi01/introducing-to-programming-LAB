@@ -119,8 +119,8 @@ def receptionist():                 # function for receptionist
             if category == "1":             # if category is 1, run the code
                 room_number = input("what is your reservation name:")   # enter your reservation name
                 if room_number in list(single): # if room_number is in list single, run this code
-                    single.remove(room_number)  # # 
-                    available_s += 1
+                    single.remove(room_number)  # remove it from single
+                    available_s += 1            # increase available s by 1
                     print("available room: single = {} double = {} elite = {} ".format(available_s, available_d,
                                                                                        available_e))
                     print(
@@ -133,11 +133,11 @@ def receptionist():                 # function for receptionist
                         print(
                             "room in use: single = {} double = {} elite = {}".format(len(single), len(double), len(elite)))
                         break
-            if category == "2":
-                room_number = input("what is your reservation name: ")
-                if room_number in list(double):
-                    double.remove(room_number)
-                    available_d += 1
+            if category == "2":     # if category is equal to 2, run the code
+                room_number = input("what is your reservation name:")  # enter your reservation name
+                if room_number in list(double):  # if room_number is in list double, run this code
+                    double.remove(room_number)   # remove it form double
+                    available_d += 1             # increase available d by 1
                     print("available room: single = {} double = {} elite = {} ".format(available_s, available_d,
                                                                                        available_e))
                     print(
@@ -149,11 +149,11 @@ def receptionist():                 # function for receptionist
                         print("room in use: single = {} double = {} elite = {}".format(len(single), len(double),
                                                                                        len(elite)))
                         break
-            if category == "3":
-                room_number = input("what is your reservation name: ")
-                if room_number in list(elite):
-                    elite.remove(room_number)
-                    available_e += 1
+            if category == "3":     # if category is 3, run the code
+                room_number = input("what is your reservation name:")  # enter your reservation name
+                if room_number in list(elite):  # if room_number is in list elite, run this code
+                    elite.remove(room_number)   # remove it from elite
+                    available_e += 1            # increase available e by 1
                     print("available room: single = {} double = {} elite = {} ".format(available_s, available_d,
                                                                                        available_e))
                     print(
@@ -167,6 +167,6 @@ def receptionist():                 # function for receptionist
                         break
 
 
-receptionist()
+receptionist()          # call function receptionist
 
 
