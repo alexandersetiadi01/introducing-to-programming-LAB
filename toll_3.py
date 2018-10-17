@@ -84,10 +84,9 @@ def toll_operator():  # function for toll operator
             "                                     PT. Jasa Marga, Tbk.                                                ")
         print(
             "=========================================================================================================")
-
-        location = input("location: ")
-
+        
         print("toll meruya or toll pondok aren ???")
+        location = input("location: ")
         if location == "meruya":
             print("category of vehicle: ")  # decoration
             print("1. Car (Rp.6.000) \n2. Bus (Rp.8.000) \n3. Truck (Rp.10.000)")  # show the option
